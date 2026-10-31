@@ -17,6 +17,9 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.2.4(react@19.2.4)
+      react-hot-toast:
+        specifier: ^2.6.1
+        version: 2.6.1(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       react-router:
         specifier: ^7.13.1
         version: 7.13.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -377,6 +380,11 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
+  goober@2.1.19:
+    resolution: {integrity: sha512-U7veizMqxyKlM58+Z5j2ngJBH/r9siDmxpvNxSw0PylF6WQvrASJEZrxh1hidRBJc2jqoBVSyOban5u8m+6Rxg==}
+    peerDependencies:
+      csstype: ^3.0.10
+
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
@@ -495,6 +503,20 @@ packages:
     resolution: {integrity: sha512-AXJdLo8kgMbimY95O2aKQqsz2iWi9jMgKJhRBAxECE4IFxfcazB2LmzloIoibJI3C12IlY20+KFaLv+71bUJeQ==}
     peerDependencies:
       react: ^19.2.4
+
+  react-hot-toast@2.6.1:
+    resolution: {integrity: sha512-gjFsf05dxcku0FkyMtFH+XmYFdA2odXfBVknEr/IZ+XpUjwsgvtY2616sOpUynK+l9ykQDRNpaJ1hYfuximUiA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: '>=16'
+      react-dom: '>=16'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
 
   react-router@7.13.1:
     resolution: {integrity: sha512-td+xP4X2/6BJvZoX6xw++A2DdEi++YypA69bJUV5oVvqf6/9/9nNlD70YO1e9d3MyamJEBQFEzk6mbfDYbqrSA==}
@@ -819,6 +841,10 @@ snapshots:
   fsevents@2.3.3:
     optional: true
 
+  goober@2.1.19(csstype@3.2.3):
+    dependencies:
+      csstype: 3.2.3
+
   graceful-fs@4.2.11: {}
 
   jiti@2.6.1: {}
@@ -909,6 +935,16 @@ snapshots:
     dependencies:
       react: 19.2.4
       scheduler: 0.27.0
+
+  react-hot-toast@2.6.1(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
+    dependencies:
+      csstype: 3.2.3
+      goober: 2.1.19(csstype@3.2.3)
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+    optionalDependencies:
+      '@types/react': 19.2.14
+      '@types/react-dom': 19.2.3(@types/react@19.2.14)
 
   react-router@7.13.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
     dependencies:
