@@ -1,0 +1,173 @@
+export const memories = [
+  {
+    title: "Project uses React, FastAPI, and MongoDB",
+    category: "Fact",
+    project: "TeamBrain Platform",
+    owner: "Alex Morgan",
+    source: "Architecture sync",
+    date: "Today, 9:42 AM",
+    importance: "High",
+    privacy: "Shared",
+  },
+  {
+    title: "Database schema changes require team approval",
+    category: "Constraint",
+    project: "TeamBrain Platform",
+    owner: "Maya Chen",
+    source: "Sprint planning",
+    date: "Yesterday",
+    importance: "Critical",
+    privacy: "Shared",
+  },
+  {
+    title: "Prefer concise pull request descriptions",
+    category: "Preference",
+    project: "Campus Connect",
+    owner: "Jordan Lee",
+    source: "Code review",
+    date: "May 18",
+    importance: "Medium",
+    privacy: "Personal",
+  },
+  {
+    title: "Vector search latency improved after index tuning",
+    category: "Lesson",
+    project: "AI Research Assistant",
+    owner: "Sam Wilson",
+    source: "Performance review",
+    date: "May 17",
+    importance: "High",
+    privacy: "Shared",
+  },
+]
+
+export const projects = [
+  {
+    name: "TeamBrain Platform",
+    description:
+      "Shared memory infrastructure for high-performing software teams.",
+    stack: ["React", "FastAPI", "MongoDB"],
+    status: "On track",
+    progress: 72,
+    memories: 486,
+    decisions: 18,
+    members: ["Alex Morgan", "Maya Chen", "Jordan Lee"],
+  },
+  {
+    name: "AI Research Assistant",
+    description: "Context-aware research workspace for technical teams.",
+    stack: ["Python", "OpenAI", "Vector Search"],
+    status: "At risk",
+    progress: 48,
+    memories: 312,
+    decisions: 11,
+    members: ["Sam Wilson", "Maya Chen"],
+  },
+  {
+    name: "Campus Connect",
+    description: "A trusted collaboration network for student communities.",
+    stack: ["Next.js", "Node.js", "MongoDB"],
+    status: "On track",
+    progress: 86,
+    memories: 198,
+    decisions: 9,
+    members: ["Jordan Lee", "Alex Morgan"],
+  },
+]
+
+export const decisions = [
+  {
+    title: "Use MongoDB as the primary database",
+    description:
+      "Adopt MongoDB Atlas for flexible memory documents and native vector search.",
+    owner: "Maya Chen",
+    project: "TeamBrain Platform",
+    date: "May 16",
+    status: "Approved",
+    reasoning:
+      "One operational platform for transactional and semantic search workloads.",
+  },
+  {
+    title: "Use FastAPI for backend services",
+    description: "Standardize AI-facing services on typed Python APIs.",
+    owner: "Alex Morgan",
+    project: "TeamBrain Platform",
+    date: "May 12",
+    status: "Approved",
+    reasoning:
+      "Strong Python AI ecosystem, async support, and generated API contracts.",
+  },
+  {
+    title: "Introduce Redis caching",
+    description: "Evaluate a hot cache for frequently retrieved team memories.",
+    owner: "Sam Wilson",
+    project: "AI Research Assistant",
+    date: "May 20",
+    status: "Proposed",
+    reasoning:
+      "Could reduce repeated retrieval latency during active conversations.",
+  },
+  {
+    title: "Store embeddings in a separate service",
+    description: "Earlier proposal to use a standalone vector database.",
+    owner: "Jordan Lee",
+    project: "TeamBrain Platform",
+    date: "Apr 28",
+    status: "Superseded",
+    reasoning:
+      "Operational complexity outweighed marginal performance benefits.",
+  },
+]
+
+export const tasks = [
+  {
+    title: "Implement user authentication",
+    description: "Add secure session flow and workspace roles.",
+    assignee: "Maya Chen",
+    priority: "High",
+    due: "May 24",
+    project: "TeamBrain",
+    status: "To Do",
+    comments: 4,
+  },
+  {
+    title: "Configure MongoDB Vector Search",
+    description: "Create memory embedding index and filters.",
+    assignee: "Alex Morgan",
+    priority: "Critical",
+    due: "May 22",
+    project: "TeamBrain",
+    status: "In Progress",
+    comments: 7,
+  },
+  {
+    title: "Build memory extraction API",
+    description: "Extract durable facts from conversations.",
+    assignee: "Sam Wilson",
+    priority: "High",
+    due: "May 26",
+    project: "TeamBrain",
+    status: "In Progress",
+    comments: 5,
+  },
+  {
+    title: "Design memory dashboard",
+    description: "Finalize responsive dashboard states.",
+    assignee: "Jordan Lee",
+    priority: "Medium",
+    due: "May 23",
+    project: "TeamBrain",
+    status: "Review",
+    comments: 3,
+  },
+  {
+    title: "Test memory retrieval",
+    description: "Evaluate precision across project contexts.",
+    assignee: "Alex Morgan",
+    priority: "High",
+    due: "May 21",
+    project: "Research",
+    status: "Completed",
+    comments: 9,
+  },
+]

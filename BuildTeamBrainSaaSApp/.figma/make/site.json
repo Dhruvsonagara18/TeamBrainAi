@@ -1,0 +1,10 @@
+{
+  "description": "TeamBrain helps software teams and AI agents share project knowledge, track decisions and tasks, and preserve context across conversations.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
